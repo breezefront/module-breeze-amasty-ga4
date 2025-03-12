@@ -1,4 +1,4 @@
-# BreezeAmastyGa4
+# Breeze Amasty Google Analytics 4
 
 This module integrates amasty/ga4 module with Breeze Frontend.
 
