@@ -1,6 +1,5 @@
 <?xml version="1.0"?>
-<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceBlock name="breeze.js">
             <arguments>
@@ -11,6 +10,17 @@
                                 <item name="path" xsi:type="string">Amasty_GA4/*</item>
                                 <item name="import" xsi:type="array">
                                     <item name="datalayer-storage" xsi:type="string">Amasty_GA4/js/datalayer-storage</item>
+                                </item>
+                            </item>
+
+                            <!-- Amasty Custom Forms Integration -->
+                            <item name="Amasty_GA4CustomForm/js/form-track" xsi:type="array">
+                                <item name="path" xsi:type="string">Amasty_GA4CustomForm/js/form-track</item>
+                                <item name="enabled" xsi:type="helper" helper="Swissup\Breeze\Helper\Config::isModuleEnabled">
+                                    <param name="path">Amasty_GA4CustomForm</param>
+                                </item>
+                                <item name="load" xsi:type="array">
+                                    <item name="onRequire" xsi:type="boolean">true</item>
                                 </item>
                             </item>
                         </item>
