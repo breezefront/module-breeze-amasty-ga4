@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Swissup\Breeze\Model\DomDocument">
+        <plugin name="swissup_breeze_amasty_ga4" type="Swissup\BreezeAmastyGa4\Plugin\BreezeDomDocument" sortOrder="1" />
+    </type>
+</config>
