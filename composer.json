@@ -2,7 +2,7 @@
     "name": "swissup/module-breeze-amasty-ga4",
     "description": "Amasty GA4 integration with Breeze Frontend",
     "type": "magento2-module",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "license": "OSL-3.0",
     "require": {
         "swissup/module-breeze": "^2.21.0"
