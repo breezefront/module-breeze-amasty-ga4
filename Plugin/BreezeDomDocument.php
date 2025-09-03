@@ -8,8 +8,8 @@ class BreezeDomDocument
     {
         // prevent escaping of =>, &&, & inside `am-ga4` elements.
         return array_merge($result, [
-            '<am-ga4' => '<script',
-            '</am-ga4>' => '</script>',
+            '<am-ga4 ' => '<script data-bz-am-ga4 ',
+            '</am-ga4>' => '/*data-bz-am-ga-4*/</script>',
         ]);
     }
 }
