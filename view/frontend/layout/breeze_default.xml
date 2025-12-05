@@ -3,6 +3,10 @@
     <body>
         <referenceBlock name="breeze.js">
             <arguments>
+                <argument name="better_compatibility" xsi:type="array">
+                    <item name="Amasty_GA4" xsi:type="boolean">false</item>
+                    <item name="Amasty_GA4CustomForm" xsi:type="boolean">false</item>
+                </argument>
                 <argument name="bundles" xsi:type="array">
                     <item name="dynamic" xsi:type="array">
                         <item name="items" xsi:type="array">
